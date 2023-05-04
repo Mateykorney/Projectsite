@@ -15,7 +15,7 @@
     <body>
     <div class="container mt-4">
         <h1>Регистрация</h1>
-        <form action="check.blade.php" method="get">
+        <form action="check" method="get">
             <input type="text" class="form-control" name="login"
                    id="login" placeholder="Введите логин"><br>
             <input type="text" class="form-control" name="name"
@@ -26,7 +26,7 @@
                    id="passport" placeholder="Номер пасспорта Например 2020134521"><br>
             <input type="text" class="form-control" name="password"
                    id="password" placeholder="Введите пароль"><br>
-            <button class="btn btn-light btn-success" type="submit">Зарегистрироваться</button>
+            <button class="btn btn-light btn-success">Зарегистрироваться</button>
         </form>
     </div>
     </body>

@@ -15,13 +15,19 @@
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                 <span class="fs-4">Очумелые ручки</span>
             </a>
-
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="/" class="nav-link">Главная</a></li>
                 <li class="nav-item"><a href="/about" class="nav-link">Про нас</a></li>
+                <div><?php  if (!array_key_exists('user', $_COOKIE)) : ?>
                 <li class="nav-item"><a href="/regi" class="nav-link">Регистрация</a></li>
-                <li class="nav-item"><a href="/chk" class="nav-link">ЧЕК</a></li>
-                <li class="nav-item"><a href="/autho" class="nav-link active" aria-current="page">Войти</a></li>
+                </div><div>
+                    <li class="nav-item"><a href="/autho" class="nav-link active" aria-current="page">Войти</a></li>
+                </div>
+                <div><?php else:?>
+                <li class="nav-item"><a href="/lk" class="nav-link">Личный кабинет</a></li></div><div>
+                     <li class="nav-item"><a href="/exit" class="nav-link active" aria-current="page">Выйти</a></li>
+                </div>
+                <?php endif;?>
             </ul>
         </header>
     </div>

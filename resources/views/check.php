@@ -1,3 +1,3 @@
 <?php
-    $login = $_POST ['login'];
+    $login = $_GET ['login'];
     echo $login;

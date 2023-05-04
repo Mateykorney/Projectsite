@@ -14,7 +14,7 @@
     <body>
     <div class="container mt-4">
         <h1>Вход</h1>
-        <form action="auth.blade.php" method="get">
+        <form action="auth" method="get">
             <input type="text" class="form-control" name="login"
                    id="login" placeholder="Введите логин"><br>
             <input type="text" class="form-control" name="password"

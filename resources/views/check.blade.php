@@ -30,13 +30,14 @@ if (mb_strlen($login) < 5 || mb_strlen($login) > 10) {
         exit();
     }
 }
-    $password = md5 ($password."potr0895");
+    //$password = md5 ($password."potr0895");
 
     $mysql = new mysqli('localhost', 'root', '', 'register.bd');
     if ($mysql->connect_errno) {
         echo $mysql->connect_error;
     }
     $mysql->query("INSERT INTO `users` (`login`,`fullname`,`birthday`,`passport`,`password`) VALUES('$login','$name','$bday','$passport','$password')");
+
     $mysql->close();
 
     header("Location: /");
