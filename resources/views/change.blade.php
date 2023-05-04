@@ -29,8 +29,3 @@ setcookie('user',$login, time() + 3600,"/");
 header("Location: /");
 exit();
 
-
-
-
-
-exit();
